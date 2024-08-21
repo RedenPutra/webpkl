@@ -1,11 +1,15 @@
 <!-- Navbar & Hero Start -->
 <div class="container-xxl position-relative p-0">
   <nav class="navbar navbar-expand-lg navbar-dark bg-light px-4 px-lg-5 py-3 py-lg-0">
-    <img src="img/tesbpr.png" alt="Logo" width="100px">
-      {{-- <a href="/" class="navbar-brand p-0">
-          <h1 class="text-primary m-0"><img src="img/tesbpr.png" alt="Logo" width="300px" height="300px"></h1> --}}
+    {{-- <div class="logo">
+        <a href="/">    
+            <img src="{{ asset('img/logo.png') }}" alt="" style="height: 100px">
+        </a>
+    </div> --}}
+      <a href="/">
+        <img src="{{ asset('img/bprbg.png') }}" alt="Logo" height="85px">
+    </a>
           <!-- <img src="img/logo.png" alt="Logo"> -->
-      {{-- </a> --}}
       <button class="navbar-toggler  btn-custom-blue" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="fa fa-bars"></span>
       </button>
