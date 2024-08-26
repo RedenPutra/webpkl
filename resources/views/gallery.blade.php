@@ -9,4 +9,21 @@
     </ul>
   </div>
 </div>
+
+<div class="container-xxl pt-5 pb-3">
+  <div class="container-xxl row">
+    <div class=" wow fadeInUp" data-wow-delay="0.1s">
+      <h1 class="mb-4">Foto BPR SUKABUMI</h1>
+    </div>
+    @foreach ($gallerys as $gallery)
+    <div class=" wow fadeInUp col-sm-4 pb-3" data-wow-delay="0.1s">
+      <div class="box">
+        @if ($gallery->foto)
+        <img src="{{ Storage::url($gallery->foto) }}" alt="Gambar">
+        @endif
+      </div>
+    </div>
+    @endforeach
+  </div>
+</div>
 @endsection

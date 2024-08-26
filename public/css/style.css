@@ -241,6 +241,15 @@
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     height: calc(100%);
     transition: .5s;
+    background-color: #FFFFFF;
+}
+
+.team-item-2 {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    height: calc(100%);
+    transition: .5s;
+    border-radius: 15px;
+    background-color: #FFFFFF;
 }
 
 .team-item img {
@@ -331,6 +340,11 @@
 
 .text-color-white {
     color: #FFFFFF;
+    font-style: italic;
+}
+
+.text-color-bl {
+    color: #0F172B;
 }
 
 .img-custom {
@@ -340,4 +354,84 @@
 
 .text-color-blue {
     color: #000066;
+}
+
+.text-kanan {
+    text-align: left;
+    color: #0F172B;
+    margin-left: 18px;
+}
+
+.table-biru {
+    background-color: #0F172B;
+    color: #FFFFFF;
+}
+
+.table-white {
+    background-color: #FFFFFF;
+}
+
+.box {
+    width: 95%; /* Menggunakan persentase untuk lebar responsif */
+    max-width: 800px; /* Maksimal lebar kotak */
+    height: auto; /* Tinggi otomatis agar sesuai dengan konten */
+    background-color: #FFFFFF;
+    padding: 0;
+    border: 4px solid #0F172B;
+    margin: 20px auto; /* Margin otomatis untuk pusatkan kotak */
+    box-sizing: border-box; /* Agar padding dan border termasuk dalam lebar total */
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%; /* Menyesuaikan lebar gambar dengan lebar box */
+    height: 100%; /* Menyesuaikan tinggi gambar dengan tinggi box */
+    object-fit: cover; /* Menjaga rasio aspek gambar dan mengisi kotak */
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 95%; /* Lebar lebih besar pada layar kecil */
+        height: auto;
+    }
+
+    .box img {
+        height: auto; /* Sesuaikan tinggi gambar secara otomatis */
+        width: 100%; /* Lebar gambar tetap memenuhi kotak */
+    }
+}
+
+.box-1 {
+    width: 100%; /* Menggunakan persentase untuk lebar responsif */
+    height: auto; /* Tinggi otomatis agar sesuai dengan konten */
+    background-color: #FFFFFF;
+    padding: 0;
+    border: 4px solid #0F172B;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Agar padding dan border termasuk dalam lebar total */
+    overflow: hidden;
+}
+
+.box-1 img {
+    width: 100%; /* Menyesuaikan lebar gambar dengan lebar box */
+    height: 100%; /* Menyesuaikan tinggi gambar dengan tinggi box */
+    object-fit: cover; /* Menjaga rasio aspek gambar dan mengisi kotak */
+}
+
+hr.custom-hr {
+    border: 0;
+    height: 4px;
+    background-color: #000066;
+}
+
+@media (max-width: 600px) {
+    .box-1 {
+        
+        height: auto;
+    }
+
+    .box-1 img {
+        height: auto; /* Sesuaikan tinggi gambar secara otomatis */
+        width: 100%; /* Lebar gambar tetap memenuhi kotak */
+    }
 }

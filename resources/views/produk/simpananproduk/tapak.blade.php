@@ -9,7 +9,7 @@
 <div class="container-xxl pt-5 pb-3">
   <div class="container-xxl row">
     <div class=" wow fadeInUp col" data-wow-delay="0.1s">
-      <div class="text-center">
+      <div class="box-1 text-center">
         <div class="pt-5 pb-3">
           <h1>Tabungan Pajak Kendaraan</h1>
         </div>
@@ -17,15 +17,15 @@
           <h3 style="color: white;">Tabungan Pajak Kendaraan (Tapak) adalah program tabungan bagi masyarakat umum yang memiliki kendaraan bermotor baik roda dua ataupun lebih dan ingin membayar pajak kendaraan pajak kendaraan secara tepat waktu dan tepat jumlah tanpa harus datang ke Kantor Samsat</h3>
         </div>
         <div class="pt-3">
-            <h6>Syarat Dan Ketentuan Tapak</h6>
-            <hr>
+            <h5>Syarat Dan Ketentuan Tapak</h5>
+            <hr class="custom-hr">
             <p class="bi bi-check">Fotocopy KTP Penabung</p>
-            <hr>
+            <hr class="custom-hr">
             <p class="bi bi-check">Fotocopy Kartu Keluarga Penabung</p>
-            <hr>
+            <hr class="custom-hr">
             <p class="bi bi-check">Fotocopy Surat Tanda Nomor Kendaraan (STNK) kendaraan yang didaftarkan</p>
-            <hr>
-            <h6 class="btn-primary pb-2 pt-2">Ayo kunjungi Kantor Cabang Perumda BPR Sukabumi terdekat untuk membuka rekening Tapak</h6>
+            <hr class="custom-hr">
+            <h5 class="btn-primary pb-2 pt-2">Ayo kunjungi Kantor Cabang Perumda BPR Sukabumi terdekat untuk membuka rekening Tapak</h5>
           </div>
         </div>
       </div>

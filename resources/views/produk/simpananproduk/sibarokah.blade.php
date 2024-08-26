@@ -9,7 +9,7 @@
 <div class="container-xxl pt-5 pb-3">
   <div class="container-xxl row">
     <div class=" wow fadeInUp col" data-wow-delay="0.1s">
-      <div class="text-center">
+      <div class="box-1 text-center">
         <div class="pt-5 pb-3">
           <h1>Simpanan Sukabumi Mubarokah</h1>
         </div>
@@ -17,15 +17,15 @@
           <h3 style="color: white;">Tabungan Sibarokah merupakan simpanan/tabungan yang diselenggarakan hanya dengan mengisi formulir pembukaan rekening tabungan dan membayar setoran pertama minimal sebesar Rp. 50.000,- maka anda telah menjadi penabung di Perumda BPR Sukabumi dengan segala manfaat dan keuntungannya</h3>
         </div>
         <div class="pt-3">
-            <h6>Syarat Dan Ketentuan SiBarokah</h6>
-            <hr>
+            <h5>Syarat Dan Ketentuan SiBarokah</h5>
+            <hr class="custom-hr">
             <p class="bi bi-check">Fotocopy KTP Penabung</p>
-            <hr>
+            <hr class="custom-hr">
             <p class="bi bi-check">Fotocopy Kartu Keluarga Penabung</p>
-            <hr>
+            <hr class="custom-hr">
             <p class="bi bi-check">Biaya Admin Bulanan Rendah hanya Rp. 5.000,-</p>
-            <hr>
-            <h6 class="btn-primary pb-2 pt-2">Ayo kunjungi Kantor Cabang Perumda BPR Sukabumi terdekat untuk membuka rekening SiBarokah</h6>
+            <hr class="custom-hr">
+            <h5 class="btn-primary pb-2 pt-2">Ayo kunjungi Kantor Cabang Perumda BPR Sukabumi terdekat untuk membuka rekening SiBarokah</h5>
           </div>
         </div>
       </div>

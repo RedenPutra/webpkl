@@ -17,115 +17,115 @@
       <h1 class="mb-4">Produk Kredit</h1>
     </div>
     <div class=" wow fadeInUp col-sm-4" data-wow-delay="0.1s">
-      <div class="team-item-1 text-center rounded-0 overflow-hidden">
-        <img src="{{ asset('img/modal.png') }}" alt="" width="400px">
-        <div class="pt-4 pb-3">
-          <h3>Kredit Modal Kerja Mitra</h3>
+      <div class="box text-center">
+        <img src="{{ asset('img/pns.png') }}" alt="">
+        <div class="pt-3 pb-3">
+          <h5>Kredit Mantap</h5>
         </div>
-        <div class="pb-2 pt-3 bg-primary">
-          <h6 class="text-color-white pb-4">Kredit ini dikhususkan untuk modal usaha</h6>
+        <div class="bg-primary pt-3 pb-3">
+          <h5 class="text-color-white">Kredit ini dikhususkan untuk karyawan yang berpenghasilan tetap</h5>
         </div>
         <div class="pt-3">
-            <h6>Persyaratan</h6>
-            <hr>
-            <p class="bi bi-check">Fotocopy KTP</p>
-            <hr>
-            <p class="bi bi-check">Fotocopy Kartu Keluarga</p>
-            <hr>
-            <p class="bi bi-check">Surat Keterangan Usaha</p>
-            <hr>
-            <h6 class="btn-custom-blue">Ayo kunjungi Kantor Cabang Perumda BPR Sukabumi terdekat</h6>
-          </div>
+          <h5>Persyaratan</h5>
+          <hr class="custom-hr">
+          <p class="bi bi-check">Fotocopy KTP</p>
+          <hr class="custom-hr">
+          <p class="bi bi-check">Fotocopy Kartu Keluarga</p>
+          <hr class="custom-hr">
+          <p class="bi bi-check">SK Penggangkatan Kerja (asli)</p>
+          <hr class="custom-hr">
+          <h5 class="btn-custom-blue">Ayo kunjungi Kantor Cabang Perumda BPR Sukabumi terdekat</h5>
         </div>
       </div>
-      <div class=" wow fadeInUp col-sm-4" data-wow-delay="0.1s">
-        <div class="team-item-1 text-center rounded-0 overflow-hidden">
-          <img src="{{ asset('img/pns.png') }}" alt="" width="400px">
-          <div class="pt-4 pb-3">
-            <h3>Kredit Mantap</h3>
-          </div>
-          <div class="pb-3 pt-3 bg-primary">
-            <h6 class="text-color-white">Kredit ini dikhususkan untuk karyawan yang berpenghasilan tetap</h6>
-          </div>
-          <div class="pt-3">
-            <h6>Persyaratan</h6>
-            <hr>
-            <p class="bi bi-check">Fotocopy KTP</p>
-            <hr>
-            <p class="bi bi-check">Fotocopy Kartu Keluarga</p>
-            <hr>
-            <p class="bi bi-check">SK (Surat Keputusan) Penggangkatan Kerja (asli)</p>
-            <hr>
-            <h6 class="btn-custom-blue">Ayo kunjungi Kantor Cabang Perumda BPR Sukabumi terdekat</h6>
-          </div>
+    </div>
+    <div class="wow fadeInUp col-sm-4" data-wow-delay="0.1s">
+      <div class="box text-center">
+        <img src="{{ asset('img/desa.jpg') }}" alt="">
+        <div class="pt-3 pb-3">
+          <h5>Kredit Mantap Desa Dan Dinas</h5>
+        </div>
+        <div class="bg-primary pt-3 pb-3">
+          <h6 class="text-color-white">Kredit ini dikhususkan untuk pegawai desa dan dinas</h6>
+        </div>
+        <div class="pt-3">
+          <h5>Persyaratan</h5>
+          <hr class="custom-hr">
+          <p class="bi bi-check">Fotocpoy KTP</p>
+          <hr class="custom-hr">
+          <p class="bi bi-check">Fotocopy Kartu Keluarga</p>
+          <hr class="custom-hr">
+          <p class="bi bi-check">Surat Keputusan Pegawai (Asli)</p>
+          <hr class="custom-hr">
+          <h5 class="btn-custom-blue">Ayo kunjungi Kantor Cabang Perumda BPR Sukabumi terdekat</h5>
         </div>
       </div>
-      <div class=" wow fadeInUp col-sm-4" data-wow-delay="0.1s">
-        <div class="team-item-1 text-center rounded-0 overflow-hidden">
-          <img src="{{ asset('img/p3k.jpeg') }}" alt="" width="400px">
-          <div class="pt-4 pb-3">
-            <h3>Kredit Mantap P3K</h3>
-          </div>
-          <div class="pb-2 pt-3 bg-primary">
-            <h6 class="text-color-white pb-4">Kredit ini dikhususkan untuk pegawai P3K</h6>
-          </div>
-          <div class="pt-3">
-            <h6>Persyaratan</h6>
-            <hr>
-            <p class="bi bi-check">Fotocopy KTP</p>
-            <hr>
-            <p class="bi bi-check">Fotocopy Kartu Keluarga</p>
-            <hr>
-            <p class="bi bi-check">Surat Keputusan Pegawai (asli),SK P3K Asli</p>
-            <hr>
-            <h6 class="btn-custom-blue ">Ayo kunjungi Kantor Cabang Perumda BPR Sukabumi terdekat</h6>
-          </div>
+    </div>
+    <div class="wow fadeInUp col-sm-4" data-wow-delay="0.1s">
+      <div class="box text-center">
+        <img src="{{ asset('img/dagang.jpg') }}" alt="">
+        <div class="pt-3 pb-3">
+          <h5>Kredit Sahabat Mikro</h5>
+        </div>
+        <div class="bg-primary pt-3 pb-3">
+          <h5 class="text-color-white">Kredit ini dikhususkan untuk para pedagang kecil</h5>
+        </div>
+        <div class="pt-3">
+          <h5>Persyaratan</h5>
+          <hr class="custom-hr">
+          <p class="bi bi-check">Fotocopy KTP</p>
+          <hr class="custom-hr">
+          <p class="bi bi-check">Fotocopy Kartu Keluarga</p>
+          <hr class="custom-hr">
+          <p class="bi bi-check">Surat Keterangan Usaha</p>
+          <hr class="custom-hr">
+          <h5 class="btn-custom-blue">Ayo kunjungi Kantor Cabang Perumda BPR Sukabumi terdekat</h5>
         </div>
       </div>
-      <div class=" pt-3 wow fadeInUp col-sm-6" data-wow-delay="0.1s">
-        <div class="team-item-1 text-center rounded-0 overflow-hidden">
-          <img src="{{ asset('img/desa.jpg') }}" alt="" width="580px">
-          <div class="pt-4 pb-3">
-            <h3>Kredit Mantap Desa Dan Dinas</h3>
-          </div>
-          <div class="pb-3 pt-3 bg-primary">
-            <h5 style="font-size: 22px" class="text-color-white">Kredit ini dikhususkan untuk pegawai desa dan dinas</h5>
-          </div>
-          <div class="pt-3">
-            <h6>Persyaratan</h6>
-            <hr>
-            <p class="bi bi-check">Fotocpoy KTP</p>
-            <hr>
-            <p class="bi bi-check">Fotocopy Kartu Keluarga</p>
-            <hr>
-            <p class="bi bi-check">Surat Keputusan Pegawai (Asli)</p>
-            <hr>
-            <h6 class="btn-custom-blue pb-2 pt-2">Ayo kunjungi Kantor Cabang Perumda BPR Sukabumi terdekat</h6>
-          </div>
+    </div>
+    <div class=" wow fadeInUp col-sm-4" data-wow-delay="0.1s">
+      <div class="box text-center">
+        <img src="{{ asset('img/modal.png') }}" alt="">
+        <div class="pt-3 pb-3">
+          <h3>Kredit Modal Kerja Mitra</h3>
+        </div>
+        <div class="bg-primary pt-3 pb-3">
+          <h4 class="text-color-white">Kredit ini dikhususkan untuk modal usaha</h4>
+        </div>
+        <div class="pt-3">
+          <h5>Persyaratan</h5>
+          <hr class="custom-hr">
+          <p class="bi bi-check">Fotocopy KTP</p>
+          <hr class="custom-hr">
+          <p class="bi bi-check">Fotocopy Kartu Keluarga</p>
+          <hr class="custom-hr">
+          <p class="bi bi-check">Surat Keterangan Usaha</p>
+          <hr class="custom-hr">
+          <h5 class="btn-custom-blue">Ayo kunjungi Kantor Cabang Perumda BPR Sukabumi terdekat</h5>
         </div>
       </div>
-      <div class=" pt-3 wow fadeInUp col-sm-6" data-wow-delay="0.1s">
-        <div class="team-item-1 text-center rounded-0 overflow-hidden">
-          <img src="{{ asset('img/dagang.jpg') }}" alt="" width="600px">
-          <div class="pt-4 pb-3">
-            <h3>Kredit Sahabat Mikro</h3>
-          </div>
-          <div class="pb-3 pt-3 bg-primary">
-            <h5 style="font-size: 22px" class="text-color-white">Kredit ini dikhususkan untuk para pedagang kecil</h5>
-          </div>
-          <div class="pt-3">
-            <h6>Persyaratan</h6>
-            <hr>
-            <p class="bi bi-check">Fotocopy KTP</p>
-            <hr>
-            <p class="bi bi-check">Fotocopy Kartu Keluarga</p>
-            <hr>
-            <p class="bi bi-check">Surat Keterangan Usaha</p>
-            <hr>
-            <h6 class="btn-custom-blue pb-2 pt-2">Ayo kunjungi Kantor Cabang Perumda BPR Sukabumi terdekat</h6>
-          </div>
+    </div>
+    <div class=" wow fadeInUp col-sm-4" data-wow-delay="0.1s">
+      <div class="box text-center">
+        <img src="{{ asset('img/p3k.jpeg') }}" alt="">
+        <div class="pt-3 pb-3">
+          <h3>Kredit Mantap P3K</h3>
+        </div>
+        <div class="bg-primary pt-3 pb-3">
+          <h4 class="text-color-white">Kredit ini dikhususkan untuk pegawai P3K</h4>
+        </div>
+        <div class="pt-3">
+          <h5>Persyaratan</h5>
+          <hr class="custom-hr">
+          <p class="bi bi-check">Fotocopy KTP</p>
+          <hr class="custom-hr">
+          <p class="bi bi-check">Fotocopy Kartu Keluarga</p>
+          <hr class="custom-hr">
+          <p class="bi bi-check">Surat Keputusan Pegawai (asli),SK P3K Asli</p>
+          <hr class="custom-hr">
+          <h5 class="btn-custom-blue ">Ayo kunjungi Kantor Cabang Perumda BPR Sukabumi terdekat</h5>
         </div>
       </div>
+    </div>
   </div>
 </div>
 @endsection

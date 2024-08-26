@@ -48,6 +48,9 @@
               </div>
               <a href="berita" class="nav-item nav-link">BERITA</a>
               <a href="gallery" class="nav-item nav-link">GALLERY</a>
+              @auth
+              <a href="{{ route('dashboard.index') }}" class="nav-item nav-link">ADMIN</a>
+              @endauth
           </div>
       </div>
   </nav>
