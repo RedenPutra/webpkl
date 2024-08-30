@@ -55,7 +55,11 @@
         @forelse ($gallerys as $gallery)
         <tr>
           <td class="align-middle">{{ $loop->iteration }}</td>
-          <td class="align-middle">{{ $gallery->foto }}</td>
+          <td class="align-middle">
+            @if ($gallery->foto)
+              <img src="{{ asset($gallery->foto) }}" alt="" style="max-width: 100px; max-height: 100px;">
+            @endif
+          </td>
           <td class="align-middle">
             <div class="btn-group" role="group" aria-label="Basic example">
               <a href="{{ route('tambahgallery.edit', ['id'=>$gallery->id]) }}" type="button" class="btn btn-secondary" >Edit</a>

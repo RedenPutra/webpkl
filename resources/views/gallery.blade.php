@@ -17,9 +17,9 @@
     </div>
     @foreach ($gallerys as $gallery)
     <div class=" wow fadeInUp col-sm-4 pb-3" data-wow-delay="0.1s">
-      <div class="box">
+      <div class="box-2">
         @if ($gallery->foto)
-        <img src="{{ Storage::url($gallery->foto) }}" alt="Gambar">
+        <img src="{{ asset($gallery->foto) }}" alt="Gambar">
         @endif
       </div>
     </div>

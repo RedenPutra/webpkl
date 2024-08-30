@@ -11,7 +11,7 @@
     <div class=" wow fadeInUp" data-wow-delay="0.1s">
       <div class="box">
         @if ($berita->gambar)
-        <img src="{{ Storage::url($berita->gambar) }}" alt="Gambar {{ $berita->judul }}">
+        <img src="{{ asset($berita->gambar) }}" alt="Gambar {{ $berita->judul }}">
         @endif
         <div class=" pt-3 pb-3 text-kanan">
           <h1>{{ $berita->judul }}</h1>

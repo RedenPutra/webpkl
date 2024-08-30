@@ -9,13 +9,18 @@
 <div class="container-xxl pt-3 pb-3">
   <div class="container-xxl">
     <div class=" wow fadeInUp" data-wow-delay="0.1s">
-      <form action="{{ route('tambahgallery.update', $gallerys->id) }}" method="POST">
+      <form action="{{ route('tambahgallery.update', $gallerys->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
         <div class="row">
           <div class="col mb-3">
             <label class="form-label">Gambar</label>
-            <input type="file" name="foto" class="form-control" placeholder="Gambar" value="{{$gallerys->foto}}">
+            @if ($gallerys->foto)
+            <div>
+              <img src="{{ asset($gallerys->foto) }}" alt="" style="max-width: 100px; max-height: 100px;">
+            </div><br>
+            @endif
+            <input type="file" name="foto" class="form-control" placeholder="Gambar">
             @error('foto')
               <span class="text-danger">{{$message}}</span>
             @enderror

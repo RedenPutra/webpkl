@@ -24,8 +24,22 @@
             $('.navbar').removeClass('sticky-top shadow-sm');
         }
     });
-    
-    
+
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 10000); // Ganti gambar setiap 3 detik
+    }
+
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");
@@ -57,13 +71,13 @@
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
+            $('.back-to-top').show();
         } else {
-            $('.back-to-top').fadeOut('slow');
+            $('.back-to-top').hide();
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 1, 'easeInOutExpo');
         return false;
     });
 

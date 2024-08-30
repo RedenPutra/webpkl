@@ -7,7 +7,7 @@
         </a>
     </div> --}}
       <a href="{{ route('dashboard.index') }}">
-        <img src="{{ asset('img/bprbg.png') }}" alt="Logo" height="85px">
+        <img src="{{ asset('img/bprbaru.png') }}" alt="Logo" height="85px">
     </a>
           <!-- <img src="img/logo.png" alt="Logo"> -->
       <button class="navbar-toggler  btn-custom-blue" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

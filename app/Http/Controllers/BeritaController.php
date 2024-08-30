@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Berita;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class BeritaController extends Controller
 {
@@ -39,26 +40,22 @@ class BeritaController extends Controller
             'konten' => 'required|string',
         ]);
 
-        // Menyimpan gambar jika ada
-        $path = null;
+        $berita = new Berita();
+        $berita->judul = $request->judul;
+        $berita->konten = $request->konten;
+
+        // Menyimpan gambar jika ada   
         if ($request->hasFile('gambar')) {
             $path = $request->file('gambar')->store('public/gambar');
+            $berita->gambar = str_replace('public/', 'storage/', $path);
         }
-
-        // Menyimpan berita ke database
-        Berita::create([
-            'gambar' => $path,
-            'judul' => $request->judul,
-            'konten' => $request->konten,
-        ]);
-
+        $berita->save();
         return redirect()->route('berita.index')->with('success', 'Berita berhasil disimpan.');
     }
 
     public function delete($id)
     {
         $beritas = Berita::findOrFail($id)->delete();
-
         if ($beritas) {
             return redirect()->route('tambahberita.tam')->with('success', 'Berita Delete Successfully');
         } else {
@@ -72,23 +69,28 @@ class BeritaController extends Controller
         return view ('admin.beritaupdate', compact('beritas'));
     }
 
-    public function update(Request $request, $id){
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'judul' => 'required|string|max:255',
+            'konten' => 'required|string',
+        ]);
+
         $beritas = Berita::findOrFail($id);
-        // $gambar = $request->gambar;
-        $judul = $request->judul;
-        $konten = $request->konten;
+        $beritas->judul = $request->judul;
+        $beritas->konten = $request->konten;
 
-        // $beritas->gambar = $gambar;
-        $beritas->judul = $judul;
-        $beritas->konten = $konten;
-        $data = $beritas->save();
-
-        if ($data) {
-            return redirect()->route('tambahberita.tam')->with('success', 'Berita Update Successfully');
-        } else {
-            return redirect()->route('tambahberita.update')->with('error', 'Some Problem occure');
+        if($request->hasfile('gambar')) {
+            if($beritas->gambar){
+                Storage::delete('public/' . str_replace('storage/', '', $beritas->gambar));
+            }
+            $path = $request->file('gambar')->store('public/gambar');
+            // Update nama file di database
+            $beritas->gambar = str_replace('public/', 'storage/', $path);
         }
-
+        $beritas->save();
+        return redirect()->route('tambahberita.tam')->with('success', 'Berita berhasil diperbarui.');
     }
 }
 

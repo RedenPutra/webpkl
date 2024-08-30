@@ -9,18 +9,23 @@
 <div class="container-xxl pt-3 pb-3">
   <div class="container-xxl">
     <div class=" wow fadeInUp" data-wow-delay="0.1s">
-      <form action="{{ route('tambahberita.update', $beritas->id) }}" method="POST">
+      <form action="{{ route('tambahberita.update', $beritas->id) }}" method="POST" enctype="multipart/form-data" >
         @csrf
         @method('PUT')
-        {{-- <div class="row">
+        <div class="row">
           <div class="col mb-3">
             <label class="form-label">Gambar</label>
-            <input type="file" name="gambar" class="form-control" placeholder="Gambar" value="{{$beritas->gambar}}">
+            @if ($beritas->gambar)
+            <div>
+              <img src="{{ asset($beritas->gambar) }}" alt="" style="max-width: 100px; max-height: 100px;">
+            </div><br>
+            @endif
+            <input type="file" name="gambar" class="form-control" placeholder="Gambar">
             @error('gambar')
               <span class="text-danger">{{$message}}</span>
             @enderror
           </div>
-        </div> --}}
+        </div>
         <div class="row">
           <div class="col mb-3">
             <label class="form-label">Judul Berita</label>

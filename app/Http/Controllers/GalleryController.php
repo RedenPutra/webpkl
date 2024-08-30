@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Gallery;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class GalleryController extends Controller
 {
@@ -31,17 +32,14 @@ class GalleryController extends Controller
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
+        $gallery = new Gallery();
+
         // Menyimpan gambar jika ada
-        $path = null;
-        if ($request->hasFile('gambar')) {
-            $path = $request->file('gambar')->store('public/gambar');
+        if ($request->hasFile('foto')) {
+            $path = $request->file('foto')->store('public/foto');
+            $gallery->foto = str_replace('public/', 'storage/', $path);
         }
-
-        // Menyimpan gambar ke database
-        Gallery::create([
-            'foto' => $path,
-        ]);
-
+        $gallery->save();
         return redirect()->route('gallery.index')->with('success', 'Gallery berhasil disimpan.');
     }
 
@@ -62,20 +60,22 @@ class GalleryController extends Controller
         return view ('admin.galleryupdate', compact('gallerys'));
     }
 
-    public function update(Request $request, $id){
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
         $gallerys = Gallery::findOrFail($id);
-        $foto = $request->foto;
-       
 
-        $gallerys->foto = $foto;
-       
-        $data = $gallerys->save();
-
-        if ($data) {
-            return redirect()->route('tambahgallery.tam')->with('success', 'Gallery Update Successfully');
-        } else {
-            return redirect()->route('tambahgallery.update')->with('error', 'Some Problem occure');
+        if($request->hasfile('foto')) {
+            if($gallerys->foto){
+                Storage::delete('public/' . str_replace('storage/', '', $gallerys->foto));
+            }
+            $path = $request->file('foto')->store('public/foto');
+            // Update nama file di database
+            $gallerys->foto = str_replace('public/', 'storage/', $path);
         }
-
+       $gallerys->save();
+       return redirect()->route('tambahgallery.tam')->with('success', 'Gallery Update Successfully');
     }
 }

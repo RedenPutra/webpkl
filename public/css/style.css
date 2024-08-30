@@ -151,12 +151,9 @@
 
 
 /*** Hero Header ***/
-.hero-header {
-    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/dagang.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/* .hero-header {
+    
+} */
 
 .hero-header img {
     animation: imgRotate 50s linear infinite;
@@ -434,4 +431,58 @@ hr.custom-hr {
         height: auto; /* Sesuaikan tinggi gambar secara otomatis */
         width: 100%; /* Lebar gambar tetap memenuhi kotak */
     }
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    padding: 20px 0; /* Sesuaikan padding atas dan bawah jika diperlukan */
+    margin: auto;
+    
+  }
+  
+  .mySlides {
+    display: none;
+  }
+
+  .slide-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Menjaga proporsi gambar */
+  }
+
+  .box-2 {
+    width: 95%; /* Lebar responsif */
+    max-width: 800px; /* Lebar maksimal */
+    aspect-ratio: 16 / 9; /* Rasio aspek 16:9 */
+    background-color: #FFFFFF;
+    padding: 0;
+    border: 4px solid #0F172B;
+    margin: 20px auto; /* Pusatkan kotak */
+    box-sizing: border-box; /* Padding dan border termasuk dalam lebar total */
+    overflow: hidden;
+}
+
+.box-2 img {
+    width: 100%; /* Lebar gambar memenuhi kotak */
+    height: 100%; /* Tinggi gambar memenuhi kotak */
+    object-fit: cover; /* Menjaga rasio aspek gambar */
+}
+
+.box-3 {
+    width: 95%; /* Menggunakan persentase untuk lebar responsif */
+    max-width: 800px; /* Maksimal lebar kotak */
+    background-color: #FFFFFF;
+    padding: 0;
+    border: 4px solid #0F172B;
+    margin: 20px auto; /* Margin otomatis untuk pusatkan kotak */
+    box-sizing: border-box; /* Agar padding dan border termasuk dalam lebar total */
+    overflow: hidden;
+}
+
+.box-3 img {
+    width: 100%; /* Menyesuaikan lebar gambar dengan lebar box */
+    height: 100%; /* Menyesuaikan tinggi gambar dengan tinggi box */
+    object-fit: cover; /* Menjaga rasio aspek gambar dan mengisi kotak */
+    aspect-ratio: 16 / 9;
 }

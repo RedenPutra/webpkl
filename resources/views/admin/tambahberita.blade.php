@@ -70,7 +70,11 @@
         @forelse ($beritas as $berita)
         <tr>
           <td class="align-middle">{{ $loop->iteration }}</td>
-          <td class="align-middle">{{ $berita->gambar }}</td>
+          <td class="align-middle">
+            @if ($berita->gambar)
+            <img src="{{ asset($berita->gambar) }}" alt="" style="max-width: 100px; max-height: 100px;">
+            @endif
+          </td>
           <td class="align-middle">{{ $berita->judul }}</td>
           <td class="align-middle">{{ $berita->konten }}</td>
           <td class="align-middle">

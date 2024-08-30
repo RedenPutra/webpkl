@@ -10,4 +10,12 @@
     </ul>
   </div>
 </div>
+
+<div class="container-xxl pt-5 pb-3">
+  <div class="container">
+      <div class=" wow fadeInUp" data-wow-delay="0.1s">
+          <img src="{{ asset('img/struktur organisasi baru.png') }}" alt="" class="img-fluid">
+      </div>
+  </div>
+</div>
 @endsection

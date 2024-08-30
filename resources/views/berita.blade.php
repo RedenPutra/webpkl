@@ -17,9 +17,9 @@
     </div>
     @foreach ($beritas as $berita)
     <div class=" wow fadeInUp col-sm-4 pb-3" data-wow-delay="0.1s">
-      <div class="box">
+      <div class="box-3">
         @if ($berita->gambar)
-        <a href="{{ route('berita.show', $berita->id) }}"><img src="{{ Storage::url($berita->gambar) }}" alt="Gambar {{ $berita->judul }}"></a>
+        <a href="{{ route('berita.show', $berita->id) }}"><img src="{{ asset($berita->gambar) }}" alt="Gambar {{ $berita->judul }}"></a>
         @endif
         <div class="pt-4 pb-3 text-kanan">
           <h4><a href="{{ route('berita.show', $berita->id) }}" class="text-color-bl" >{{ $berita->judul }}</a></h4>
